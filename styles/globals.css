@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+  --blue1: #080B16;
+  --blue: #0D121E;
+  --orange: #F0B35B;
+  --white1: #FAFAFA;
+  --white: #FFFFFF;
+
+  /* Spacing */
+  --s-4xl: 100px;
+  --s-3xl: 70px;
+  --s-2xl: 50px;
+  --s-l: 30px;
+  --s-m: 25px;
+  --s-s: 20px;
+  --s-2xs: 15px;
+  --s-3xs: 10px;
+  --s-4xs: 5px;
+
+  /* Font Scale */
+  --h1-size: 40px;
+  --h2-size: 34px;
+  --h3-size: 28px;
+  --h4-size: 24px;
+  --h5-size: 18px;
+  --p-size: 16px;
+  --small-size: 14px;
+}
+
+@theme {
+  --color-*: initial;
+  --spacing-*: initial;
+}
+
+@media (max-width: 800px) {
+  :root {
+    /* Spacing - Mobile */
+    --s-4xl: 70px;
+    --s-3xl: 50px;
+    --s-2xl: 35px;
+    --s-l: 24px;
+    --s-m: 18px;
+    --s-s: 14px;
+    --s-2xs: 12px;
+    --s-3xs: 8px;
+    --s-4xs: 3px;
+
+    /* Font Scale - Mobile */
+    --h1-size: 34px;
+    --h2-size: 28px;
+    --h3-size: 24px;
+    --h4-size: 20px;
+    --h5-size: 16px;
+    --p-size: 14px;
+    --small-size: 12px;
+  }
+}
+
+/* Body */
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Relação Tag - Tamanho */
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-size: var(--h5-size);
+}
+
+p {
+  font-size: var(--p-size);
+}
+
+small {
+  font-size: var(--small-size);
+}
+
+
+/* Cores de texto */
+.c-blue1 {
+  color: var(--blue1);
+}
+
+.c-blue {
+  color: var(--blue);
+}
+
+.c-orange {
+  color: var(--orange);
+}
+
+.c-white {
+  color: var(--white);
+}
