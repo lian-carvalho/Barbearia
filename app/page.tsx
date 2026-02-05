@@ -4,6 +4,7 @@ import AboutUsSection from "@/components/sections/AboutUsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import OurTeamSection from "@/components/sections/OurTeamSection";
 import UnitsSection from "@/components/sections/UnitsSection";
+import Footer from "@/components/navigation/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <OurTeamSection />
       <UnitsSection />
+      <Footer />
     </div>
   );
 }
