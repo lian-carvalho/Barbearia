@@ -1,0 +1,32 @@
+.ourTeam {
+    display: flex;
+    align-items: center;
+    padding: var(--s-4xl);
+    gap: var(--s-l);
+    background-color: var(--blue1);
+}
+
+.title {
+    flex-shrink: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    padding: var(--s-3xs) 0;
+    gap: var(--s-m);
+    overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 999px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
