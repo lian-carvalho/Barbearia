@@ -1,0 +1,52 @@
+.serviceCard {
+    flex: 1;
+    max-width: 400px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--s-2xs);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.serviceCard:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.imageContainer {
+    position: relative;
+    aspect-ratio: 5 / 4;
+    width: 100%;
+    background-color: gray;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    padding: var(--s-2xs);
+    gap: var(--s-2xs);
+    background-color: var(--white);
+}
+
+.infos p {
+    flex: 1;
+    text-align: left;
+
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.infos span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--s-4xs) var(--s-3xs);
+
+    border-radius: 500px;
+    background-color: var(--blue);
+}
