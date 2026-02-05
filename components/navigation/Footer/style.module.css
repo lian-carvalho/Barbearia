@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--s-4xl);
+    gap: var(--s-s);
+
+    background-color: var(--blue);
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: var(--s-2xs);
+}
+
+.iconsContainer .icon {
+    width: var(--s-2xl);
+    height: var(--s-2xl);
+    color: var(--white);
+
+    transition: .3s;
+}
+
+.iconsContainer .icon:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+.logoContainer {
+    height: calc(var(--s-3xl) * 2);
+    width: calc(var(--s-3xl) * 2);
+    position: relative;
+}
