@@ -1,0 +1,28 @@
+.whatsBtn {
+    z-index: 999;
+    position: fixed;
+    bottom: var(--s-2xl);
+    right: var(--s-2xl);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--s-2xs);
+
+    border-radius: 50%;
+    background-color: #2FC83F;
+
+    overflow: hidden;
+    transition: .3s;
+}
+
+.whatsBtn:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.whatsBtn div {
+    height: var(--s-2xl);
+    width: var(--s-2xl);
+    position: relative;
+}
