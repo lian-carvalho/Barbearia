@@ -1,13 +1,13 @@
 .ourTeam {
     display: flex;
     align-items: center;
-    padding: var(--s-4xl);
+    padding: var(--s-3xl);
     gap: var(--s-l);
     background-color: var(--blue1);
 }
 
 .title {
-    flex-shrink: 0;
+    width: 66px;
 }
 
 .container {
@@ -29,4 +29,10 @@
 
 .container::-webkit-scrollbar-track {
     background: transparent;
+}
+
+@media (max-width: 800px) {
+    .title {
+        width: 30px;
+    }
 }
