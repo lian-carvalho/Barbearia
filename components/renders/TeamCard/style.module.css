@@ -1,0 +1,62 @@
+.teamCard {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2xs);
+}
+
+.imageContainer {
+    aspect-ratio: 10 / 11;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: var(--s-m);
+
+    border-radius: var(--s-3xs);
+    background-color: var(--blue1);
+    overflow: hidden;
+
+    position: relative;
+}
+
+.imageContainer img {
+    z-index: 1;
+}
+
+.imageContainer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.31) 31%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+
+    z-index: 2;
+}
+
+.imageContainer p {
+    text-align: center;
+    z-index: 3;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: var(--s-2xs);
+}
+
+.iconsContainer .icon {
+    width: var(--s-m);
+    height: var(--s-m);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .teamCard {
+        min-width: 280px;
+    }
+}
