@@ -6,6 +6,8 @@ import OurTeamSection from "@/components/sections/OurTeamSection";
 import UnitsSection from "@/components/sections/UnitsSection";
 import Footer from "@/components/navigation/Footer";
 
+import WhatsappButton from "@/components/ui/WhatsappButton";
+
 export default function Home() {
   return (
     <div>
@@ -16,6 +18,8 @@ export default function Home() {
       <OurTeamSection />
       <UnitsSection />
       <Footer />
+
+      <WhatsappButton />
     </div>
   );
 }
