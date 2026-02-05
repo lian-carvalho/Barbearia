@@ -1,0 +1,56 @@
+.unitCard {
+    aspect-ratio: 10 / 11;
+    flex: 1;
+    max-width: 400px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: var(--s-s) var(--s-2xl);
+
+    border-radius: var(--s-s);
+    background-color: var(--blue1);
+
+    overflow: hidden;
+
+    position: relative;
+    transition: .4s;
+}
+
+.unitCard:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.infos {
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: var(--s-3xs) var(--s-s);
+
+    border-radius: var(--s-3xs);
+    background-color: rgba(0, 0, 0, .8);
+
+    overflow: hidden;
+}
+
+.infos p {
+    width: 100%;
+    text-align: center;
+}
+
+.unitCard span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+@media (max-width: 800px) {
+    .unitCard {
+        min-width: 250px;
+    }
+}
