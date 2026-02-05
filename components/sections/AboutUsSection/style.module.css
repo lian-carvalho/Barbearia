@@ -20,6 +20,7 @@
 .photosContainer div {
     position: absolute;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: .3s;
 }
 
 .photosContainer div:nth-child(1) {
@@ -29,8 +30,8 @@
     width: 50%;
 
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 25%;
+    /* transform: translateX(-50%); */
 }
 
 .photosContainer div:nth-child(2) {
@@ -51,8 +52,11 @@
 
     bottom: 0;
     right: 0;
+}
 
-    background-color: blue;
+.photosContainer div:hover {
+    transform: scale(1.05);
+    transition: .3s;
 }
 
 .textContainer {
