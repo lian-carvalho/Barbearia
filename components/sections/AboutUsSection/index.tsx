@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function AboutUsSection() {
     return (
-        <section className={styles.aboutUs}>
+        <section className={styles.aboutUs} id='about-us'>
             <div className={styles.photosContainer}>
                 <div>
                     <Image

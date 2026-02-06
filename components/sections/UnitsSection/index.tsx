@@ -18,7 +18,7 @@ export default function UnitsSection() {
     ]
 
     return (
-        <section className={styles.units}>
+        <section className={styles.units} id='units'>
             <h1 className="c-blue font-bold">NOSSAS UNIDADES</h1>
             <div className={styles.container}>
                 {unidades.map((unit, index) => (
