@@ -16,7 +16,7 @@ import AgendModal from "@/components/ui/AgendModal";
 
 export default function Home() {
 
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => { setModalOpen(true) };
   const closeModal = () => { setModalOpen(false) };
