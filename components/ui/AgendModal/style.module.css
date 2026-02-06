@@ -1,0 +1,119 @@
+.modalContainer {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.modal {
+    width: 100%;
+    max-width: 600px;
+    max-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: var(--s-2xl) var(--s-3xl);
+    gap: var(--s-m);
+
+    background-color: var(--blue1);
+    border-radius: var(--s-2xs);
+
+    overflow: hidden;
+}
+
+.modalHead {
+    display: flex;
+    align-items: center;
+    padding-left: var(--s-2xl);
+}
+
+.modalHead h3,
+.modal h4 {
+    flex: 1;
+    text-align: center;
+}
+
+.closeBtn {
+    width: var(--s-2xl);
+    height: var(--s-2xl);
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.closeBtn:hover {
+    opacity: .6;
+    transition: .3s;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3xs);
+}
+
+.inputContainer label {
+    color: var(--white1);
+    font-size: var(--p-size);
+}
+
+.inputContainer div,
+.inputContainer select {
+    display: flex;
+    align-items: center;
+    padding: var(--s-3xs) var(--s-2xs);
+    gap: var(--s-4xs);
+
+    background-color: var(--white1);
+    border-radius: var(--s-3xs);
+}
+
+.inputContainer input,
+.inputContainer select {
+    flex: 1;
+    font-size: var(--p-size);
+    color: var(--blue1);
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.orangeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--s-3xs) var(--s-l);
+
+    background-color: var(--orange);
+    border-radius: var(--s-4xs);
+
+    color: var(--blue1);
+    font-size: var(--p-size);
+    font-weight: bold;
+    text-align: center;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.orangeBtn:hover {
+    opacity: 0.8;
+    transition: .5s;
+}
+
+.logoContainer {
+    align-self: center;
+    height: var(--s-4xl);
+    width: var(--s-4xl);
+    position: relative;
+}
