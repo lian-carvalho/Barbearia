@@ -1,10 +1,14 @@
 .header {
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
     display: flex;
     align-items: center;
     gap: var(--s-3xs);
     padding: var(--s-2xs) var(--s-l);
     background-color: var(--blue1);
-    position: sticky;
 }
 
 .logoContainer {
