@@ -1,3 +1,7 @@
+'use client'
+
+import { useState } from "react";
+
 import Header from "@/components/navigation/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutUsSection from "@/components/sections/AboutUsSection";
@@ -8,11 +12,19 @@ import Footer from "@/components/navigation/Footer";
 
 import WhatsappButton from "@/components/ui/WhatsappButton";
 
+import AgendModal from "@/components/ui/AgendModal";
+
 export default function Home() {
+
+  const [modalOpen, setModalOpen] = useState(true);
+
+  const openModal = () => { setModalOpen(true) };
+  const closeModal = () => { setModalOpen(false) };
+
   return (
     <div>
       <Header />
-      <HeroSection />
+      <HeroSection openModalFunction={openModal} />
       <AboutUsSection />
       <ServicesSection />
       <OurTeamSection />
@@ -20,6 +32,8 @@ export default function Home() {
       <Footer />
 
       <WhatsappButton />
+
+      <AgendModal open={modalOpen} closeFunction={closeModal} />
     </div>
   );
 }
