@@ -17,9 +17,14 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
 
     const [finished, setFinished] = useState(false);
 
+    const hours = ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'];
+
+    const [hourForm, setHourForm] = useState(hours[0]);
+
     useEffect(() => {
         if (!open) {
             setFinished(false);
+            setHourForm(hours[0]);
         }
     }, [open])
 
@@ -58,6 +63,22 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
                                 <option value="unit1">Campo Grande - Rua Aguiar</option>
                                 <option value="unit2">Campo Grande - Rua Centro</option>
                             </select>
+                        </div>
+
+                        <div className={styles.hoursContainer}>
+                            <label htmlFor="hours">Selecione um horário</label>
+                            <div className={styles.container}>
+
+                                {hours.map((hour, index) => (
+                                    <button
+                                        key={index}
+                                        className={hour === hourForm ? styles.active : ''}
+                                        onClick={() => { setHourForm(hour) }}
+                                    >
+                                        {hour}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
                         <button className={styles.orangeBtn} onClick={() => { formValidation() }}>Agendar horário</button>

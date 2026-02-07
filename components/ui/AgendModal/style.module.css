@@ -26,7 +26,12 @@
     background-color: var(--blue1);
     border-radius: var(--s-2xs);
 
-    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .modalHead {
@@ -54,13 +59,15 @@
     transition: .3s;
 }
 
-.inputContainer {
+.inputContainer,
+.hoursContainer {
     display: flex;
     flex-direction: column;
     gap: var(--s-3xs);
 }
 
-.inputContainer label {
+.inputContainer label,
+.hoursContainer label {
     color: var(--white1);
     font-size: var(--p-size);
 }
@@ -116,4 +123,50 @@
     height: var(--s-4xl);
     width: var(--s-4xl);
     position: relative;
+}
+
+.hoursContainer .container {
+    display: flex;
+    padding-bottom: var(--s-3xs);
+    gap: var(--s-2xs);
+    /* border: 1px solid red; */
+    overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 999px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.container button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--s-3xs) var(--s-l);
+
+    color: var(--white);
+    font-size: var(--p-size);
+
+    background-color: var(--blue);
+    border-radius: var(--s-3xs);
+    border: 1.5px solid #5B5B5B;
+
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container button.active {
+    background-color: rgba(240, 179, 91, .5);
+    border-color: var(--orange);
+    transition: .3s;
 }
