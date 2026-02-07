@@ -46,14 +46,14 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
                         <div className={styles.inputContainer}>
                             <label htmlFor="name">Nome completo</label>
                             <div>
-                                <input type="text" name="name" id="name" placeholder='Nome completo' />
+                                <input type="text" name="name" id="name" placeholder='Nome completo' autoComplete='off' />
                             </div>
                         </div>
 
                         <div className={styles.inputContainer}>
                             <label htmlFor="date">Selecione uma data</label>
                             <div>
-                                <input type="date" name="date" id="date" />
+                                <input type="date" name="date" id="date" defaultValue={new Date().toISOString().split('T')[0]} />
                             </div>
                         </div>
 
@@ -66,7 +66,7 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
                         </div>
 
                         <div className={styles.hoursContainer}>
-                            <label htmlFor="hours">Selecione um horário</label>
+                            <p className='c-white'>Selecione um horário</p>
                             <div className={styles.container}>
 
                                 {hours.map((hour, index) => (

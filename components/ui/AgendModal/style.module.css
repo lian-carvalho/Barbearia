@@ -66,8 +66,7 @@
     gap: var(--s-3xs);
 }
 
-.inputContainer label,
-.hoursContainer label {
+.inputContainer label {
     color: var(--white1);
     font-size: var(--p-size);
 }
