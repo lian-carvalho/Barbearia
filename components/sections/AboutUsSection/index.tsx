@@ -31,10 +31,10 @@ export default function AboutUsSection() {
             <div className={styles.textContainer}>
                 <h1 className="c-white font-bold">Sobre</h1>
                 <p className="c-white">
-                    Lorem ipsum dolor sit amet consectetur. Elementum euismod at sed tortor enim lorem leo congue. In mauris urna eget tempor quisque sed libero nunc. Dictum luctus aliquam vel ut aliquet pulvinar ac. Bibendum elementum vestibulum ultricies adipiscing nulla rhoncus.
+                    Cada detalhe do nosso trabalho é pensado para valorizar sua presença. Técnica, experiência e atenção caminham juntas para entregar um resultado preciso, consistente e alinhado com quem você é. Aqui, o foco não é seguir padrões prontos, mas criar um visual que respeite sua identidade e fortaleça sua imagem de forma natural.
                 </p>
                 <p className="c-white">
-                    Lorem ipsum dolor sit amet consectetur. Elementum euismod at sed tortor enim lorem leo congue. In mauris urna eget tempor quisque sed libero nunc. Dictum luctus aliquam vel ut aliquet pulvinar ac. Bibendum elementum vestibulum ultricies adipiscing nulla rhoncus.
+                    Estilo é mais do que aparência. É um reflexo direto da sua atitude e da sua persona. Nossa barbearia existe para homens que entendem isso e sabem que o visual comunica antes de qualquer palavra. Criamos um ambiente onde confiança, autenticidade e personalidade são levadas a sério.
                 </p>
                 <p className="c-white font-bold">Horário de funcionamento: 09:00 ás 18:00</p>
             </div>

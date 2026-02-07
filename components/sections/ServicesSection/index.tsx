@@ -26,7 +26,7 @@ export default function ServicesSection() {
         <section className={styles.services} id='services'>
             <h1 className="c-blue font-bold">SERVIÇOS</h1>
             <p className="c-blue1">
-                Lorem ipsum dolor sit amet consectetur. Nec dolor nibh cursus porttitor ipsum feugiat bibendum. At bibendum vulputate mi sit in facilisis elementum magnis non.
+                Atendimento focado em precisão, cuidado e consistência, com uma experiência pensada para valorizar sua imagem e fortalecer sua identidade.
             </p>
 
             <div className={styles.container}>
