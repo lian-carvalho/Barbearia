@@ -1,4 +1,4 @@
-# Move
+# Barbearia
 ## Sobre o projeto
 Projeto desenvolvido por mim para demonstrar minhas habilidades
 
