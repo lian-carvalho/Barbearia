@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.iconsContainer}>
-                <a href='https://github.com/lian-carvalho' target="_blank" rel="noopener noreferrer" title='Github de Lian Dev'>
+                <a href='https://github.com/lian-carvalho/Barbearia' target="_blank" rel="noopener noreferrer" title='Repositório do Projeto'>
                     <Github className={styles.icon} />
                 </a>
                 <a href='https://www.linkedin.com/in/liancarvalho/' target="_blank" rel="noopener noreferrer" title='LinkedIn de Lian Dev'>
