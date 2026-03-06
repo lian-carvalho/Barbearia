@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Barbearia",
     images: [
       {
-        url: '/seo/banner.png',
+        url: '/images/seo/banner.png',
         width: 1200,
         height: 630,
         alt: 'Barbearia moderna'
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Barbearia",
     description: "Cortes modernos e barba - Projeto de portfólio",
-    images: ["/seo/banner.png"],
+    images: ["/images/seo/banner.png"],
   },
 
   robots: {
