@@ -2,7 +2,7 @@
 
 import styles from './style.module.css'
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import Image from 'next/image'
 
@@ -21,12 +21,11 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
 
     const [hourForm, setHourForm] = useState(hours[0]);
 
-    useEffect(() => {
-        if (!open) {
-            setFinished(false);
-            setHourForm(hours[0]);
-        }
-    }, [open])
+    const handleClose = () => { 
+        setFinished(false);
+        setHourForm(hours[0]);
+        closeFunction();
+    };
 
     const formValidation = () => {
         // Future validation
@@ -40,7 +39,7 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
                     <div className={styles.modal}>
                         <div className={styles.modalHead}>
                             <h3 className="c-white font-bold">Agendar horário</h3>
-                            <X className={styles.closeBtn} onClick={() => { closeFunction() }} />
+                            <X className={styles.closeBtn} onClick={() => { handleClose() }} />
                         </div>
 
                         <div className={styles.inputContainer}>
@@ -99,7 +98,7 @@ export default function AgendModal({ open = false, closeFunction }: AgendModalPr
                             />
                         </div>
 
-                        <button className={styles.orangeBtn} onClick={() => { closeFunction() }}>Voltar</button>
+                        <button className={styles.orangeBtn} onClick={() => { handleClose() }}>Voltar</button>
                     </div>
                 </div>
             )}
