@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Header from "@/components/navigation/Header";
 import HeroSection from "@/components/sections/HeroSection";
@@ -21,19 +21,29 @@ export default function Home() {
   const openModal = () => { setModalOpen(true) };
   const closeModal = () => { setModalOpen(false) };
 
-  return (
-    <div>
-      <Header />
-      <HeroSection openModalFunction={openModal} />
-      <AboutUsSection />
-      <ServicesSection />
-      <OurTeamSection />
-      <UnitsSection />
-      <Footer />
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [modalOpen]);
 
-      <WhatsappButton />
+  return (
+    <>
+      <div inert={modalOpen}>
+        <Header />
+        <HeroSection openModalFunction={openModal} />
+        <AboutUsSection />
+        <ServicesSection />
+        <OurTeamSection />
+        <UnitsSection />
+        <Footer />
+
+        <WhatsappButton />
+      </div>
 
       <AgendModal open={modalOpen} closeFunction={closeModal} />
-    </div>
+    </>
   );
 }
