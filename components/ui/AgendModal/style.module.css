@@ -154,6 +154,7 @@
 
     color: var(--white);
     font-size: var(--p-size);
+    line-height: 1;
 
     background-color: var(--blue);
     border-radius: var(--s-3xs);
